@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
-export const useIntersectionObserver = (ref, options) => {
+export const useIntersectionObserver = (
+  ref,
+  { threshold, root, rootMargin }
+) => {
+  // configure the state
   const [state, setState] = useState({
     inView: false,
     triggered: false,
@@ -9,26 +13,30 @@ export const useIntersectionObserver = (ref, options) => {
 
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
+      // checks to see if the element is intersecting
       if (entries[0].intersectionRatio > 0) {
+        // if it is update the state, we set triggered as to not re-observe the element
         setState({
           inView: true,
           triggered: true,
           entry: observerInstance
         });
+        // unobserve the element
         observerInstance.unobserve(ref.current);
       }
       return;
     },
     {
-      threshold: options.threshold || 1,
-      root: options.root || null,
-      rootMargin: options.rootMargin || "0%"
+      threshold: threshold || 0,
+      root: root || null,
+      rootMargin: rootMargin || "0%"
     }
   );
 
   useEffect(() => {
-    if (ref.current) {
-      !state.triggered && observer.observe(ref.current);
+    // check that the element exists, and has not already been triggered
+    if (ref.current && !state.triggered) {
+      observer.observe(ref.current);
     }
   });
 

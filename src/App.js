@@ -7,10 +7,12 @@ import { useIntersectionObserver } from "./useIntersectionObserver";
 
 function App() {
   const elementRef = useRef(null);
-  const [inView, entry] = useIntersectionObserver(elementRef, { threshold: 1 });
+  const [inView, entry] = useIntersectionObserver(elementRef, {
+    threshold: 0
+  });
 
   useEffect(() => {
-    console.log(inView, entry);
+    console.log(inView);
   }, [entry, inView]);
 
   return (
@@ -34,7 +36,7 @@ function App() {
       </div>
       <div className="full-height two">
         <div className="item-two" ref={elementRef}>
-          {inView && <p style={{ color: "white" }}>I'm in view!</p>}
+          {inView && <p>I'm in view!</p>}
         </div>
       </div>
     </div>

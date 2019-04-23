@@ -53,11 +53,13 @@
 
 .item-one {
   background-color: #282c34;
+  color: #61dafb;
   height: 30%;
   width: 30%;
 }
 
 .item-two {
+  color: #282c34;
   background-color: #61dafb;
   height: 30%;
   width: 30%;
