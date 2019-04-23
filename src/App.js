@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "intersection-observer";
 
+import { useIntersectionObserver } from "./useIntersectionObserver";
+
 function App() {
+  const elementRef = useRef(null);
+  const [inView, entry] = useIntersectionObserver(elementRef, { threshold: 1 });
+
+  useEffect(() => {
+    console.log(inView, entry);
+  }, [entry, inView]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,7 +33,9 @@ function App() {
         <div className="item-one" />
       </div>
       <div className="full-height two">
-        <div className="item-two" />
+        <div className="item-two" ref={elementRef}>
+          {inView && <p style={{ color: "white" }}>I'm in view!</p>}
+        </div>
       </div>
     </div>
   );
