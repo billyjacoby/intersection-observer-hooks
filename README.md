@@ -14,6 +14,9 @@ Here is a brief synopsis of what we will do:
   - Ensure to only observe the element intersecting once
 - Show the hook in action, via the console
 
+If you want to see it in action checkout the demo [https://billyjacoby.github.io/intersection-observer-hooks](here!)
+(be sure to have the developer console open)
+
 We'll demonstrate how this works on a simple `create-react-app` skeleton.
 
 First thing we'll do is run:
