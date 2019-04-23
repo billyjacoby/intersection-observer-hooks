@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.63fa199c.chunk.css",
-    "main.js": "/static/js/main.60e6a2a5.chunk.js",
-    "main.js.map": "/static/js/main.60e6a2a5.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.c5541365.js",
-    "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
-    "static/js/2.bf4a470d.chunk.js": "/static/js/2.bf4a470d.chunk.js",
-    "static/js/2.bf4a470d.chunk.js.map": "/static/js/2.bf4a470d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.509a5b87bad6bd9f96dcb3707ab52f69.js": "/precache-manifest.509a5b87bad6bd9f96dcb3707ab52f69.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.63fa199c.chunk.css.map": "/static/css/main.63fa199c.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/intersection-observer-hooks/static/css/main.63fa199c.chunk.css",
+    "main.js": "/intersection-observer-hooks/static/js/main.1bb109bf.chunk.js",
+    "main.js.map": "/intersection-observer-hooks/static/js/main.1bb109bf.chunk.js.map",
+    "runtime~main.js": "/intersection-observer-hooks/static/js/runtime~main.1348fa20.js",
+    "runtime~main.js.map": "/intersection-observer-hooks/static/js/runtime~main.1348fa20.js.map",
+    "static/js/2.bf4a470d.chunk.js": "/intersection-observer-hooks/static/js/2.bf4a470d.chunk.js",
+    "static/js/2.bf4a470d.chunk.js.map": "/intersection-observer-hooks/static/js/2.bf4a470d.chunk.js.map",
+    "index.html": "/intersection-observer-hooks/index.html",
+    "precache-manifest.c199b4585a6a9ca36c83ff8c877ad062.js": "/intersection-observer-hooks/precache-manifest.c199b4585a6a9ca36c83ff8c877ad062.js",
+    "service-worker.js": "/intersection-observer-hooks/service-worker.js",
+    "static/css/main.63fa199c.chunk.css.map": "/intersection-observer-hooks/static/css/main.63fa199c.chunk.css.map",
+    "static/media/logo.svg": "/intersection-observer-hooks/static/media/logo.5d5d9eef.svg"
   }
 }
